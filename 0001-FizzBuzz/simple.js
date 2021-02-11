@@ -1,16 +1,19 @@
 const { basename } = require('path')
-
 const name = basename(__filename)
 
-const logNum = (num) => {
+const transform = (num) => {
   let msg = ''
   if (num % 3 === 0) msg = 'Fizz'
   if (num % 5 === 0) msg += 'Buzz'
-  console.log(msg || num)
+  return msg || num.toString()
 }
 
 const solve = (start = 1, target = 50) => {
-  for (let i = start; i <= target; i++) logNum(i)
+  const solutionSequence = []
+  for (let num = start; num <= target; num++) {
+    solutionSequence.push(transform(num))
+  }
+  return solutionSequence
 }
 
 module.exports = {

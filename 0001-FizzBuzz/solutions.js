@@ -10,7 +10,8 @@ const run = (start, target) => {
 
   solutions.forEach((solution) => {
     console.log(`\n>>> Running ${solution.name}`)
-    solution.solve(start, target)
+    const solutionSequence = solution.solve(start, target)
+    solutionSequence.forEach((num) => console.log(num))
   })
 }
 
