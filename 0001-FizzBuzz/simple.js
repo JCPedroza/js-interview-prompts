@@ -3,13 +3,10 @@ const { basename } = require('path')
 const name = basename(__filename)
 
 const logNum = (num) => {
-  const isMult3 = num % 3 === 0
-  const isMult5 = num % 5 === 0
-
-  if (isMult3 && isMult5) console.log('FizzBuzz')
-  else if (isMult3) console.log('Fizz')
-  else if (isMult5) console.log('Buzz')
-  else console.log(num)
+  let msg = ''
+  if (num % 3 === 0) msg = 'Fizz'
+  if (num % 5 === 0) msg += 'Buzz'
+  console.log(msg || num)
 }
 
 const solve = (start = 1, target = 50) => {

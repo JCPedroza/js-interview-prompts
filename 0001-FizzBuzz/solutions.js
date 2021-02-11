@@ -1,9 +1,7 @@
 const simple = require('./simple')
-const fast = require('./fast')
 
 const solutions = [
-  simple,
-  fast
+  simple
 ]
 
 const run = (start, target) => {
