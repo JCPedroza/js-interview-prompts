@@ -1,3 +1,3 @@
-const fizzBuzz = require('./0001-FizzBuzz/solutions')
+const solutions = require('./general/ReverseString/solutions')
 
-fizzBuzz.run(1, 20)
+solutions.run('hola')

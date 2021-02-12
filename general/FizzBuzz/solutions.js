@@ -1,7 +1,7 @@
-const simple = require('./simple')
+const ifChain = require('./if-chain')
 
 const solutions = [
-  simple
+  ifChain
 ]
 
 const run = (start, target) => {

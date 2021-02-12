@@ -1,5 +1,4 @@
-const { basename } = require('path')
-const name = basename(__filename)
+const name = 'If Chain'
 
 const transform = (num) => {
   let msg = ''
