@@ -1,11 +1,15 @@
 const splitReduce = require('./split-reduce')
 const forLoop = require('./for-loop')
 const splitReverseJoin = require('./split-reverse-join')
+const destructReverseJoin = require('./destruct-reverse-join')
+const recursive = require('./recursive')
 
 const solutions = [
   splitReduce,
   forLoop,
-  splitReverseJoin
+  splitReverseJoin,
+  destructReverseJoin,
+  recursive
 ]
 
 const run = (str) => {
