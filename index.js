@@ -1,3 +1,3 @@
-const solutions = require('./general/ReverseString/solutions')
+const solutions = require('./general/fibonacci/solutions')
 
-solutions.run('hola')
+solutions.run(50)
